@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stle.css">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+    <title>Tracker</title>
+</head>
+
+<body>
+    <!-----------------------------------------------------header---------------------------------------------------------------------->
+    <section class="head" id="header" data-text="DIDR">
+        <header class="text-gray-700 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl">DIDR</span>
+                </a>
+                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                    <a href="#sec1" class="mr-5 hover:text-gray-900">Login</a>
+                    <a href="#sec2" class="mr-5 hover:text-gray-900">Funds</a>
+                    <a href="#sec3" class="mr-5 hover:text-gray-900">Proposals</a>
+                    <a href="/" class="mr-5 hover:text-gray-900">AdvancedOptions</a>
+                </nav>
+                <button onclick="document.location='#sec6'"
+                    class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Suggestions
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+    </section>
+
+
+    <!------------------------------------incoming funds-->
+
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Outgoing Funds</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The list of outgoing transactions from the
+                    officials.</p>
+            </div>
+            <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+                <table class="table-auto w-full text-left whitespace-no-wrap">
+                    <thead>
+                        <tr>
+                            <th
+                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200 rounded-tl rounded-bl">
+                                Name</th>
+                            <th
+                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
+                                Transaction id</th>
+                            <th
+                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
+                                Date</th>
+                            <th
+                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
+                                Amount</th>
+                            <th
+                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">
+                                Status</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="px-4 py-3">XYZ</td>
+                            <td class="px-4 py-3">09898729633xc90</td>
+                            <td class="px-4 py-3">August 2020</td>
+                            <td class="px-4 py-3 text-lg text-gray-900">Rb3,48,0005</td>
+                            <td class="px-4 py-3">Level2</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">ABC</td>
+                            <td class="px-4 py-3">09098729633xc90</td>
+                            <td class="px-4 py-3">July 2020</td>
+                            <td class="px-4 py-3 text-lg text-gray-900">Rb8,005</td>
+                            <td class="px-4 py-3">Level1</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">PQR</td>
+                            <td class="px-4 py-3">29038729633xc90</td>
+                            <td class="px-4 py-3">May 2020</td>
+                            <td class="px-4 py-3 text-lg text-gray-900">Rb8,907</td>
+                            <td class="px-4 py-3">Level3</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">DEF</td>
+                            <td class="px-4 py-3">09267329633xc90</td>
+                            <td class="px-4 py-3">March 2020</td>
+                            <td class="px-4 py-3 text-lg text-gray-900">Rb2,002</td>
+                            <td class="px-4 py-3">Level2</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">XYZ</td>
+                            <td class="px-4 py-3">09898729633xc90</td>
+                            <td class="px-4 py-3">March 2020</td>
+                            <td class="px-4 py-3 text-lg text-gray-900">Rb1,11,200</td>
+                            <td class="px-4 py-3">Level1</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">ABC</td>
+                            <td class="px-4 py-3">09098729633xc90</td>
+                            <td class="px-4 py-3">Feb 2020</td>
+                            <td class="px-4 py-3 text-lg text-gray-900">Rb8,005</td>
+                            <td class="px-4 py-3">Level0</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+                
+                <button id="back" type="button " onclick="document.location='index.html'"
+                    class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Back</button>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
